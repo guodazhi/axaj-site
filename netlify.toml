@@ -1,0 +1,82 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+
+[[redirects]]
+  from = "/api/ping"
+  to = "/.netlify/functions/ping"
+  status = 200
+
+[[redirects]]
+  from = "/api/auth/register"
+  to = "/.netlify/functions/auth-register"
+  status = 200
+[[redirects]]
+  from = "/api/auth/login"
+  to = "/.netlify/functions/auth-login"
+  status = 200
+[[redirects]]
+  from = "/api/auth/me"
+  to = "/.netlify/functions/auth-me"
+  status = 200
+[[redirects]]
+  from = "/api/auth/submit-id"
+  to = "/.netlify/functions/auth-submit-id"
+  status = 200
+
+[[redirects]]
+  from = "/api/listings"
+  to = "/.netlify/functions/listings"
+  status = 200
+[[redirects]]
+  from = "/api/listing"
+  to = "/.netlify/functions/listing"
+  status = 200
+
+[[redirects]]
+  from = "/api/requests/create"
+  to = "/.netlify/functions/requests-create"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin/stats"
+  to = "/.netlify/functions/admin-stats"
+  status = 200
+[[redirects]]
+  from = "/api/admin/users"
+  to = "/.netlify/functions/admin-users"
+  status = 200
+[[redirects]]
+  from = "/api/admin/verify-user"
+  to = "/.netlify/functions/admin-verify-user"
+  status = 200
+[[redirects]]
+  from = "/api/admin/requests"
+  to = "/.netlify/functions/admin-requests"
+  status = 200
+[[redirects]]
+  from = "/api/admin/set-request-status"
+  to = "/.netlify/functions/admin-set-request-status"
+  status = 200
+[[redirects]]
+  from = "/api/admin/listings"
+  to = "/.netlify/functions/admin-listings"
+  status = 200
+[[redirects]]
+  from = "/api/admin/upsert-listing"
+  to = "/.netlify/functions/admin-upsert-listing"
+  status = 200
+[[redirects]]
+  from = "/api/admin/delete-listing"
+  to = "/.netlify/functions/admin-delete-listing"
+  status = 200
+[[redirects]]
+  from = "/api/admin/set-listing-status"
+  to = "/.netlify/functions/admin-set-listing-status"
+  status = 200
